@@ -8,14 +8,6 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      // theme: ThemeData(
-      //   colorScheme: const ColorScheme.light(
-      //     primary: Colors.amber,
-      //     secondary: Colors.blue,
-      //     tertiary: Colors.greenAccent,
-      //   ),
-      // ),
-      //home: const HomePage(),
       home: NagaTheme(
         principal1: Colors.amber,
         principal2: Colors.blue,

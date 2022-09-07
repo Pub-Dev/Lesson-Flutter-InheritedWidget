@@ -13,24 +13,17 @@ class HomePage extends StatelessWidget {
         color: NagaTheme.of(context).principal1Background,
         child: Box(
           color: NagaTheme.of(context).principal2,
-          child: Box(
-            color: NagaTheme.of(context).principal2Background,
+          child: NagaTheme(
+            principal1: Colors.cyan.shade300,
+            principal2: Colors.cyan.shade200,
+            principal1Background: Colors.cyan.shade100,
+            principal2Background: Colors.purple,
+            child: Box(
+              color: NagaTheme.of(context).principal2Background,
+            ),
           ),
         ),
       ),
     );
   }
-
-  // @override
-  // Widget build(BuildContext context) {
-  //   return Box(
-  //     color: Theme.of(context).colorScheme.primary,
-  //     child: Box(
-  //       color: Theme.of(context).colorScheme.secondary,
-  //       child: Box(
-  //         color: Theme.of(context).colorScheme.tertiary,
-  //       ),
-  //     ),
-  //   );
-  // }
 }
