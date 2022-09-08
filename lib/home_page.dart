@@ -18,9 +18,11 @@ class HomePage extends StatelessWidget {
             principal2: Colors.cyan.shade200,
             principal1Background: Colors.cyan.shade100,
             principal2Background: Colors.purple,
-            child: Box(
-              color: NagaTheme.of(context).principal2Background,
-            ),
+            child: Builder(builder: (internalContext) {
+              return Box(
+                color: NagaTheme.of(internalContext).principal2Background,
+              );
+            }),
           ),
         ),
       ),
