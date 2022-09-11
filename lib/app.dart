@@ -9,10 +9,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: NagaTheme(
-        principal1: Colors.amber,
+        principal1: Colors.green,
         principal2: Colors.blue,
-        principal1Background: Colors.amberAccent,
-        principal2Background: Colors.cyan,
+        principal1Background: Colors.yellow,
+        principal2Background: Colors.black,
         child: HomePage(),
       ),
     );
